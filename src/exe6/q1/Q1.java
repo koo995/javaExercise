@@ -26,7 +26,7 @@ public class Q1 {
         }
 //        kinds = new int[]{0, 5, 0, 0, 0};
         numbers = new int[]{0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0};
-        numbers = new int[]{0, 0, 1, 0, 3, 2, 0, 0, 1, 0, 0, 0, 0, 0};
+//        numbers = new int[]{0, 0, 1, 0, 3, 2, 0, 0, 1, 0, 0, 0, 0, 0};
 
 
         System.out.println("numbers = " + Arrays.toString(numbers));
