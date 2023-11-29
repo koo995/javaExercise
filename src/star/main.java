@@ -1,6 +1,4 @@
-package star;
-
-import static java.util.logging.Logger.global;
+package src.star;
 
 public class main {
 
@@ -25,7 +23,7 @@ public class main {
             for( int j = 0 ; j < 5; j++) {
                 System.out.print("*");
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -40,7 +38,7 @@ public class main {
                     System.out.print(" ");
                 }
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -55,7 +53,7 @@ public class main {
                     System.out.print(" ");
                 }
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -70,7 +68,7 @@ public class main {
                     System.out.print(" ");
                 }
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -78,7 +76,7 @@ public class main {
         System.out.println("-----------star5--------------");
         for( int i = 1 ; i < 6; i++) {
             System.out.print("*****" + "*".repeat(i));
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -86,7 +84,7 @@ public class main {
         System.out.println("-----------star6--------------");
         for (int i = 5; i > 0; i--) {
             System.out.print("*".repeat(i));
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -131,7 +129,7 @@ public class main {
                 }
                 else System.out.print(" ");
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -157,12 +155,12 @@ public class main {
         System.out.println("-----------star9.2--------------");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                if (((i + j <= 4) && (i >= j)) || ((i <= j) && (i + j >= 4))) {
+                if (((i + j <= 4) && (i >= j)) || ((i <= j) && (i + j >= 4))) { // 8번에서 얻은것의 !(not)연산을 하면 된다...
                     System.out.print("*");
                 }
                 else System.out.print(" ");
             }
-            System.out.println("\t");
+            System.out.println();
         }
     }
 
@@ -170,7 +168,7 @@ public class main {
         System.out.println("-----------star10--------------");
         for (int i = 0; i < 5; i++) {
             System.out.print(" ".repeat(4-i) + "*".repeat(2*i+1) + " ".repeat(4-i));
-            System.out.println("\t");
+            System.out.println();
         }
     }
 }
