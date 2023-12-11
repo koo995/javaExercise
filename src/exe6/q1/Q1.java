@@ -7,10 +7,15 @@ public class Q1 {
     public static void main(String[] args) {
         Deck deck = new Deck();
         deck.shuffle();
+
         Card[] myCards = new Card[5];
         for (int i = 0; i < 5; i++) {
             myCards[i] = deck.cardArr[i];
         }
+
+        myCards = new Card[]{new Card(1, 1), new Card(1, 2), new Card(1, 3), new Card(1, 4), new Card(1, 5)};
+
+
         System.out.println("myCards = " + Arrays.toString(myCards));
         String result = rankCheck(myCards);
         System.out.println("result = " + result);
@@ -24,9 +29,6 @@ public class Q1 {
             kinds[card.getKind()]++;
             numbers[card.getNumber()]++;
         }
-//        kinds = new int[]{0, 5, 0, 0, 0};
-        numbers = new int[]{0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0};
-//        numbers = new int[]{0, 0, 1, 0, 3, 2, 0, 0, 1, 0, 0, 0, 0, 0};
 
 
         System.out.println("numbers = " + Arrays.toString(numbers));
