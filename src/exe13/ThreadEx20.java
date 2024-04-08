@@ -17,6 +17,9 @@ class ThreadEx20 {
              */
             if (gc.freeMemory() < requireMemory || gc.freeMemory() < gc.totalMemory() * 0.4) {
                 gc.interrupt();
+                try {
+                    gc.join(100);
+                } catch (InterruptedException e) {}
             }
 
             gc.usedMemory += requireMemory;
